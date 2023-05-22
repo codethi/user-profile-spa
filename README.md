@@ -1,4 +1,4 @@
-# Profile de Usuário em React com Axios - Aprendendo Consumo de API
+# User Profile
 
 Este é um projeto prático em React, com o objetivo de ensinar o consumo de APIs utilizando a biblioteca Axios. Ao longo deste projeto, você aprenderá passo a passo como criar um profile de usuário, obtendo os dados de uma API externa e exibindo-os na interface.
 
