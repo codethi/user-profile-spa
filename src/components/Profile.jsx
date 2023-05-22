@@ -1,15 +1,15 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { FiSend, FiPhone } from "react-icons/fi";
-import axios from "axios";
 
 export default function Profile() {
   const [user, setUser] = useState({});
 
   async function getUser() {
-    const url = "https://randomuser.me/api";
-    const result = await axios.get(url);
-    setUser(result.data.results[0]);
-    /*   const newUser = {
+    const url = "https://randomuser.me/api/";
+    const response = await axios.get(url);
+    setUser(response.data.results[0]);
+    /* const newUser = {
       name: "Thiago Lima",
       picture: "https://avatars.githubusercontent.com/u/50744116?v=4",
       username: "thicode",
@@ -42,7 +42,7 @@ export default function Profile() {
         </div>
         <div className=" ">
           <div className="text-center px-14">
-            <h2 className="text-gray-800 text-3xl font-bold">{user.name?.first} {user.name?.last}</h2>
+            <h2 className="text-gray-800 text-3xl font-bold">{user.name?.first}</h2>
             <a
               className="text-gray-400 mt-2 hover:text-blue-500"
               href="https://www.instagram.com/immohitdhiman/"
